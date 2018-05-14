@@ -1,0 +1,21 @@
+hostname: rancher_server
+rancher:
+        bootstrap_docker:
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        docker:
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        system_docker:
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        network:
+                dns:
+                        nameservers:
+                                - 114.114.114.114
+                                - 115.115.115.115
+                interfaces:
+                        eth0:
+                                address: 192.168.1.250/24
+                                gateway: 192.168.1.1
+                                mtu: 1500
+                                dhcp: false
+ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvpjmpZl9rdb+rGUvAbWZz+C0GHOUgNNtEQZhSuW7dunZXvR6MKq71EabAzlq44wycqwgLH4CgzYxhhyQegaYP3GMH3AvSWoV4EedZxxWEpZTR/To5s5wefSL6XovavQODm+8Nwzq2kmeUwYWy+uO02/FZ3FVlXXLqKkB27+tn6oO4DzOBV9Cu00UESpiXu1YECqzhREpSUElBHqd9tqApwx2fzoNUpSpPwjsdFMT2YyHU2vSZZFTmGBBDE16mHgVI4WsH8E4M+wBakulKhqBPaSv7AXAWhhZheHOezsWf9YOaNa8J+eHPoFadA/C5yjwlHR0h9PQNS2qEX2L0Sozn0pCx98jlKyzwlnSOGfcD3X992fwohfszduC75okrsJ1DCpb5+149bhvx/ZvRmhiDx41v07cqN8lsOISRPPWgGXGdrLH7iPq7akLChRsK9JU6O+bUizVCLP4IhpW9SXZVbObipQq+3fmKw4c1vHEnB/FPAzNnyJ3NVuhTQgQakDOy0mBE59ch7bm2qU8ErKNp8YXodJClPe/aJotsfQ1x7Jc4b+rztADqPnteD6SbUgrb1q8wLQeBDHYbadv4DRabmF9YtcdQFB7cSoDL+C31mj1tP6aDJlKNTX0MWQruUeAsL3Z9B97WVYVec6zjimvrckG3gDTuEvH/NWScBtLwaQ== recallcode@aliyun.com
